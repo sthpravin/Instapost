@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+#carrierwave
+gem 'carrierwave'
 #Devise 4.0
 gem 'devise'
 #bootstrap
