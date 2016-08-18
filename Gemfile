@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+#Devise 4.0
+gem 'devise'
 #bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
