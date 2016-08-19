@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 #carrierwave
 gem 'carrierwave'
+
+gem 'simple_form'
 #Devise 4.0
 gem 'devise'
 #bootstrap
