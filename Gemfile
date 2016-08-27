@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 #carrierwave
 gem 'carrierwave'
 
+#To keeps count of likes
+gem 'acts_as_votable', '~> 0.10.0'
+
 gem 'simple_form'
 #Devise 4.0
 gem 'devise'
