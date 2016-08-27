@@ -27,5 +27,6 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     if @comment.user != current_user
       redirect_to root_path
+    end
   end
 end
