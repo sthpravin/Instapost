@@ -9,18 +9,26 @@
     </div>
 
     <%= image_tag post.photo, class: 'photo' %>
-    
+	
+
     <div class="post_body">
 
       <%= link_to User.find(post.user_id).name, user_path(post.user_id) %> <%= post.description %>
 
     </div>
 
+
+    <span id="likes_container_<%= post.id %>">
+      <%= render partial: 'likes', locals: {post: post} %>
+    </span>
+
+
     <div class="post_comments">
 
       <% post.comments.each do |comment| %>
 
         <%= link_to User.find(comment.user_id).name,  user_path(comment.user_id) %> <%= comment.text %>
+
 
       <% end %>
 
