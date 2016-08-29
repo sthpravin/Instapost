@@ -1,5 +1,7 @@
+
 body {
-  background-color: #FAFAFA;
+  width : 100%;
+  background-color: #fafafa;
 }
 nav {
   border-bottom: 1px solid #dbdbdb;
@@ -107,4 +109,22 @@ nav {
   .fa {
     font-size: 20px;
   }
+}
+
+.text-center{
+  display:none
+}
+
+#profile_grid{
+  float : none;
+  margin : 0 auto;
+}
+
+.show_button{
+  margin-top: 10px;
+  margin-left: 50%;
+}
+
+.profile_contact{
+  align: right
 }

@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 	before_action :is_owner?, only: [:edit, :update, :destroy]
 	before_action :authenticate_user!, only: [:new, :create]
 	def index
-		@posts = Post.all.order('created_at DESC')
+		@posts = Post.all.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
 	end
 	def new
 		@post = Post.new
