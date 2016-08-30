@@ -17,9 +17,8 @@
 
   <span id="likes_container_<%= post.id %>">
     <%= render partial: 'likes', locals: {post: post} %>
-    <%= render_shareable :buttons=> ['twitter', 'facebook', 'tumblr'] %>
   </span> 
-    
+  <%= render_shareable :buttons=> ['twitter', 'facebook', 'google_plus'] %>  
 
 
   <div class="post_comments">
