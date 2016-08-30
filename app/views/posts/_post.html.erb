@@ -19,7 +19,7 @@
     <%= render partial: 'likes', locals: {post: post} %>
   </span> 
   <%= render_shareable :buttons=> ['twitter', 'google_plus'] %>  
-
+  <%= render_shareable :buttons=> ['twitter'], :twitter=> {:send=> 'true', :url=> 'localhost:3000/post_path(post.id)', method: :get} %>
 
   <div class="post_comments">
     <% post.comments.each do |comment| %>
