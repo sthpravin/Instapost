@@ -3,6 +3,7 @@ gem 'shareable'
 gem 'font-awesome-sass', '~> 4.6.2'
 #carrierwave
 gem 'carrierwave'
+gem 'cloudinary'
 #To keeps count of likes
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'will_paginate', '~> 3.0.7'

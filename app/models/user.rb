@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-
+  
   mount_uploader :photo, PhotoUploader
   has_many :posts
   has_many :comments

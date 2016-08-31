@@ -1,0 +1,10 @@
+# config/cloudinary.yml
+development:
+  cloud_name: "djhteluyn"
+  api_key: "589379278728517"
+  api_secret: "p2Qf-hehlfKsKTgaenWK9VyO33I"
+
+production:
+  cloud_name: "djhteluyn"
+  api_key: "589379278728517"
+  api_secret: "p2Qf-hehlfKsKTgaenWK9VyO33I"
