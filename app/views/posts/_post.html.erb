@@ -5,7 +5,7 @@
  	  <span class="timestamp pull-right"><%= distance_of_time_in_words(DateTime.now, post.created_at) %> ago</span>
   </div>
 
-  <%= image_tag post.photo_url, class: 'photo' %>
+  <a href='http://instaphoenix.herokuapp.com/posts/' + post.id.to_s><%= image_tag post.photo_url, class: 'photo' %></a>
 
 
   <div class="post_body">
@@ -18,8 +18,8 @@
   <span id="likes_container_<%= post.id %>">
     <%= render partial: 'likes', locals: {post: post} %>
   </span> 
-  <%= render_shareable :buttons=> ['twitter'], :twitter=> {:send=> 'true', :url=> 'http://instaphoenix.herokuapp.com/posts/' + post.id.to_s, method: :get} %>`
-  <%= render_shareable :buttons=> ['google_plus'], :google_plus=> {:send=> 'true', :url=> 'http://instaphoenix.herokuapp.com/posts/' + post.id.to_s, method: :get} %>`
+  <%= render_shareable :buttons=> ['twitter'], :twitter=> {:send=> 'true', :url=> 'http://instaphoenix.herokuapp.com/posts/' + post.id.to_s, method: :get} %>
+  <%= render_shareable :buttons=> ['google_plus'], :google_plus=> {:send=> 'true', :url=> 'http://instaphoenix.herokuapp.com/posts/' + post.id.to_s, method: :get} %>
   <div class="post_comments">
     <% post.comments.each do |comment| %>
       <%= link_to comment.user.name,  user_path(comment.user_id) %> <%= comment.text %>

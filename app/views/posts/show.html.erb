@@ -17,7 +17,8 @@
 
   <span id="likes_container_<%= @post.id %>">
     <%= render partial: 'likes', locals: {post: @post} %>
-    <%= render_shareable :buttons=> ['twitter', 'facebook', 'tumblr'] %>
+    <%= render_shareable :buttons=> ['twitter'], :twitter=> {:send=> 'true', :url=> 'http://instaphoenix.herokuapp.com/posts/' + post.id.to_s, method: :get} %>
+  <%= render_shareable :buttons=> ['google_plus'], :google_plus=> {:send=> 'true', :url=> 'http://instaphoenix.herokuapp.com/posts/' + post.id.to_s, method: :get} %>
   </span> 
     
 
